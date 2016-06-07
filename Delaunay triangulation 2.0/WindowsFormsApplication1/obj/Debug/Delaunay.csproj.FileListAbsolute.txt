@@ -1,0 +1,18 @@
+D:\Documentos\Visual Studio Projects 2008\Delaunay triangulation 2.0\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Documentos\Visual Studio Projects 2008\Delaunay triangulation 2.0\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Documentos\Visual Studio Projects 2008\Delaunay triangulation 2.0\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\Documentos\Visual Studio Projects 2008\Delaunay triangulation 2.0\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\Documentos\Visual Studio Projects 2008\Delaunay triangulation 2.0\WindowsFormsApplication1\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Visual Studio Projects 2008\Delaunay triangulation 2.0\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.MainForm.resources
+D:\Documentos\Visual Studio Projects 2008\Delaunay triangulation 2.0\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Documentos\Visual Studio Projects 2008\Delaunay triangulation 2.0\WindowsFormsApplication1\obj\Debug\Delaunay.csproj.GenerateResource.Cache
+D:\Documentos\Visual Studio Projects 2008\Triangulacion de Delaunay\Delaunay triangulation 2.0\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Documentos\Visual Studio Projects 2008\Triangulacion de Delaunay\Delaunay triangulation 2.0\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+D:\Documentos\Visual Studio Projects 2008\Triangulacion de Delaunay\Delaunay triangulation 2.0\WindowsFormsApplication1\obj\Debug\ResolveAssemblyReference.cache
+D:\Documentos\Visual Studio Projects 2008\Triangulacion de Delaunay\Delaunay triangulation 2.0\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.MainForm.resources
+D:\Documentos\Visual Studio Projects 2008\Triangulacion de Delaunay\Delaunay triangulation 2.0\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Documentos\Visual Studio Projects 2008\Triangulacion de Delaunay\Delaunay triangulation 2.0\WindowsFormsApplication1\obj\Debug\Delaunay.csproj.GenerateResource.Cache
+D:\Documentos\Visual Studio Projects 2008\Triangulacion de Delaunay\Delaunay triangulation 2.0\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+D:\Documentos\Visual Studio Projects 2008\Triangulacion de Delaunay\Delaunay triangulation 2.0\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+D:\Vasily\Cujae\TODO GRAPHIKA\proyectos sede grafica\este año\proyectos martin\Triangulacion de Delaunay\Delaunay triangulation 2.0\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+D:\Vasily\Cujae\TODO GRAPHIKA\proyectos sede grafica\este año\proyectos martin\Triangulacion de Delaunay\Delaunay triangulation 2.0\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

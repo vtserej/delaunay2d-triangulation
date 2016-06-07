@@ -1,0 +1,778 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0055)http://es.wikipedia.org/wiki/Condici%C3%B3n_de_Delaunay -->
+<HTML lang=es dir=ltr xml:lang="es" 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>Triangulación de Delaunay - Wikipedia, la enciclopedia libre</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META http-equiv=Content-Style-Type content=text/css>
+<META content="MSHTML 6.00.2900.5512" name=GENERATOR>
+<META 
+content="Triangulación de Delaunay,Circuncentro,Circunferencia,Cota ajustada asintótica,Cota superior asintótica,Determinante (matemáticas),Diagrama de Voronoi,Dimensión,Gráficos 3D por computadora,Lengua inglesa,Triángulo" 
+name=keywords><LINK href="/wiki/Triangulaci%C3%B3n_de_Delaunay" 
+rel=canonical><LINK title=Editar 
+href="/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=edit" 
+type=application/x-wiki rel=alternate><LINK title=Editar 
+href="/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=edit" 
+rel=edit><LINK href="http://es.wikipedia.org/apple-touch-icon.png" 
+rel=apple-touch-icon><LINK href="/favicon.ico" rel="shortcut icon"><LINK 
+title="Wikipedia (es)" href="/w/opensearch_desc.php" 
+type=application/opensearchdescription+xml rel=search><LINK 
+href="http://www.gnu.org/copyleft/fdl.html" rel=copyright><LINK 
+title="Wikipedia RSS feed" 
+href="/w/index.php?title=Especial:CambiosRecientes&amp;feed=rss" 
+type=application/rss+xml rel=alternate><LINK title="Wikipedia Atom feed" 
+href="/w/index.php?title=Especial:CambiosRecientes&amp;feed=atom" 
+type=application/atom+xml rel=alternate><LINK media=screen 
+href="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/shared.css" 
+type=text/css rel=stylesheet><LINK media=print 
+href="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/commonPrint.css" 
+type=text/css rel=stylesheet><LINK media=screen 
+href="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/main.css" 
+type=text/css rel=stylesheet><LINK media=handheld 
+href="F:\Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos\main(1).css" 
+type=text/css rel=stylesheet><!--[if lt IE 5.5000]><link rel="stylesheet" href="/skins-1.5/monobook/IE50Fixes.css?224" type="text/css" media="screen" /><![endif]--><!--[if IE 5.5000]><link rel="stylesheet" href="/skins-1.5/monobook/IE55Fixes.css?224" type="text/css" media="screen" /><![endif]--><!--[if IE 6]><LINK 
+media=screen 
+href="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/IE60Fixes.css" 
+type=text/css rel=stylesheet><![endif]--><!--[if IE 7]><link rel="stylesheet" href="/skins-1.5/monobook/IE70Fixes.css?224" type="text/css" media="screen" /><![endif]--><LINK 
+href="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/index.css" 
+type=text/css rel=stylesheet><LINK media=print 
+href="/w/index.php?title=MediaWiki:Print.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" 
+type=text/css rel=stylesheet><LINK media=handheld 
+href="/w/index.php?title=MediaWiki:Handheld.css&amp;usemsgcache=yes&amp;ctype=text%2Fcss&amp;smaxage=2678400&amp;action=raw&amp;maxage=2678400" 
+type=text/css rel=stylesheet><LINK 
+href="F:\Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos\index(1).css" 
+type=text/css rel=stylesheet><LINK 
+href="F:\Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos\index(2).css" 
+type=text/css rel=stylesheet><!--[if lt IE 7]>
+<SCRIPT 
+src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/IEFixes.js" 
+type=text/javascript></SCRIPT>
+
+<META http-equiv=imagetoolbar content=no><![endif]-->
+<SCRIPT type=text/javascript>/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/skins-1.5";
+		var wgArticlePath = "/wiki/$1";
+		var wgScriptPath = "/w";
+		var wgScript = "/w/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://es.wikipedia.org";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Triangulación_de_Delaunay";
+		var wgTitle = "Triangulación de Delaunay";
+		var wgAction = "view";
+		var wgArticleId = "351006";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "es";
+		var wgContentLanguage = "es";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 22384914;
+		var wgVersion = "1.16alpha";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = [",	.", ".	,"];
+		var wgDigitTransformTable = ["", ""];
+		var wgMWSuggestTemplate = "http://es.wikipedia.org/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest";
+		var wgDBname = "eswiki";
+		var wgSearchNamespaces = [0, 100, 104];
+		var wgMWSuggestMessages = ["con sugerencias", "sin sugerencias"];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</SCRIPT>
+
+<SCRIPT 
+src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/wikibits.js" 
+type=text/javascript><!-- wikibits js --></SCRIPT>
+<!-- Head Scripts -->
+<SCRIPT 
+src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/ajax.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/mwsuggest.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>/*<![CDATA[*/
+		var wgNotice='';var wgNoticeLocal='';
+		/*]]>*/</SCRIPT>
+
+<SCRIPT 
+src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/centralnotice.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/index.php" 
+type=text/javascript><!-- site js --></SCRIPT>
+</HEAD>
+<BODY 
+class="mediawiki ltr ns-0 ns-subject page-Triangulación_de_Delaunay skin-monobook">
+<DIV id=globalWrapper>
+<DIV id=column-content>
+<DIV id=content><A id=top name=top></A>
+<DIV id=siteNotice>
+<SCRIPT 
+type=text/javascript>if (wgNotice != '') document.writeln(wgNotice);</SCRIPT>
+</DIV>
+<H1 class=firstHeading id=firstHeading>Triangulación de Delaunay</H1>
+<DIV id=bodyContent>
+<H3 id=siteSub>De Wikipedia, la enciclopedia libre</H3>
+<DIV id=contentSub>(Redirigido desde <A title="Condición de Delaunay" 
+href="http://es.wikipedia.org/w/index.php?title=Condici%C3%B3n_de_Delaunay&amp;redirect=no">Condición 
+de Delaunay</A>)</DIV>
+<DIV id=jump-to-nav>Saltar a <A 
+href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#column-one">navegación</A>, 
+<A 
+href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#searchInput">búsqueda</A></DIV><!-- start content -->
+<P>Una <B>triangulación de Delaunay</B> /<SPAN class=IPA 
+style="FONT-FAMILY: inherit">dəlo'ne</SPAN>/, a veces escrito fonéticamente 
+«Deloné», es una red de <A title=Triángulo 
+href="http://es.wikipedia.org/wiki/TriÃ¡ngulo">triángulos</A> que cumple la 
+<B>condición de Delaunay</B>. Esta condición dice que la circunferencia 
+circunscrita de cada triángulo de la red no debe contener ningún vertice de otro 
+triángulo. Se usan triangulaciones de Delaunay en geometría por ordenar, 
+especialmente en <A title="Gráficos 3D por computadora" 
+href="http://es.wikipedia.org/wiki/GrÃ¡ficos_3D_por_computadora">gráficos 3D por 
+computadora</A>.</P>
+<P>Se le denomina así por el matemático ruso <A class=new 
+title="Boris Nikolaevich Delone (aún no redactado)" 
+href="http://es.wikipedia.org/w/index.php?title=Boris_Nikolaevich_Delone&amp;action=edit&amp;redlink=1">Boris 
+Nikolaevich Delone</A> (<I>Борис Николаевич Делоне</I>, 1890 - 1980) quien lo 
+inventó en 1934;<SUP class=reference id=cite_ref-0><A 
+href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_note-0"><SPAN 
+class=corchete-llamada>[</SPAN>1<SPAN class=corchete-llamada>]</SPAN></A></SUP> 
+el mismo Delone usó la forma francesa de su apellido, «Delaunay», como 
+apreciación a sus antecesores franceses.</P>
+<TABLE class=toc id=toc summary=Contenido>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV id=toctitle>
+      <H2>Contenido</H2></DIV>
+      <UL>
+        <LI class=toclevel-1><A 
+        href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#Aplicaci.C3.B3n"><SPAN 
+        class=tocnumber>1</SPAN> <SPAN class=toctext>Aplicación</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#Condici.C3.B3n_de_Delaunay"><SPAN 
+        class=tocnumber>2</SPAN> <SPAN class=toctext>Condición de 
+        Delaunay</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#Propiedades"><SPAN 
+        class=tocnumber>3</SPAN> <SPAN class=toctext>Propiedades</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#Relaci.C3.B3n_con_diagramas_de_Voronoi"><SPAN 
+        class=tocnumber>4</SPAN> <SPAN class=toctext>Relación con diagramas de 
+        Voronoi</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#Flipping"><SPAN 
+        class=tocnumber>5</SPAN> <SPAN class=toctext>Flipping</SPAN></A> 
+        <LI class=toclevel-1><A 
+        href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#Construcci.C3.B3n_algoritmo"><SPAN 
+        class=tocnumber>6</SPAN> <SPAN class=toctext>Construcción 
+        algoritmo</SPAN></A> 
+        <UL>
+          <LI class=toclevel-2><A 
+          href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#Incremental_construction"><SPAN 
+          class=tocnumber>6.1</SPAN> <SPAN class=toctext>Incremental 
+          construction</SPAN></A> 
+          <LI class=toclevel-2><A 
+          href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#Divide_and_conquer"><SPAN 
+          class=tocnumber>6.2</SPAN> <SPAN class=toctext>Divide and 
+          conquer</SPAN></A> 
+          <LI class=toclevel-2><A 
+          href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#Sweepline"><SPAN 
+          class=tocnumber>6.3</SPAN> <SPAN class=toctext>Sweepline</SPAN></A> 
+          </LI></UL>
+        <LI class=toclevel-1><A 
+        href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#Enlaces_externos"><SPAN 
+        class=tocnumber>7</SPAN> <SPAN class=toctext>Enlaces externos</SPAN></A> 
+
+        <LI class=toclevel-1><A 
+        href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#Fuentes"><SPAN 
+        class=tocnumber>8</SPAN> <SPAN class=toctext>Fuentes</SPAN></A> 
+    </LI></UL></TD></TR></TBODY></TABLE>
+<SCRIPT type=text/javascript>
+//<![CDATA[
+ if (window.showTocToggle) { var tocShowText = "mostrar"; var tocHideText = "ocultar"; showTocToggle(); } 
+//]]>
+</SCRIPT>
+
+<P><A id=Aplicaci.C3.B3n name=Aplicaci.C3.B3n></A></P>
+<H2><SPAN class=editsection>[<A title="Editar sección: Aplicación" 
+href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=edit&amp;section=1">editar</A>]</SPAN> 
+<SPAN class=mw-headline>Aplicación</SPAN></H2>
+<P>En gráficos 3D por computadora se usan redes de polígonos para modelar 
+objetos tridimensionales, juntando los polígonos para imitar la superficie del 
+objeto. En general se usan triángulos porque son los polígonos más simples y 
+tienen muchas propiedades favorables, como que representan una superficie 
+coplanar.</P>
+<P>Hay dos formas de modelar un objeto de superficies: modelarlo de mano o 
+escanearlo con un <I>range scanner</I>. Al escanearlo se produce un relieve de 
+la superficie formado por puntos discretos (ver Fig. 1). Para usar ese relieve 
+hay que transformarlo en una red de triángulos (ver Fig. 2); esa transformación 
+se llama «triangulación».</P>
+<P>La triangulación de Delaunay maximiza los ángulos interiores de los 
+triángulos de la triangulación. Eso es muy práctico porque al usar la 
+triangulación como modelo tridimensional los errores de redondeo son mínimos. 
+Por eso, en general se usan triangulaciones de Delaunay en aplicaciones 
+gráficas.</P>
+<TABLE class=gallery cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV class=gallerybox style="WIDTH: 155px">
+      <DIV class=thumb 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 13px; WIDTH: 150px; PADDING-TOP: 13px">
+      <DIV style="MARGIN-LEFT: auto; WIDTH: 120px; MARGIN-RIGHT: auto"><A 
+      class=image title="Delaunay points.png" 
+      href="http://es.wikipedia.org/wiki/Archivo:Delaunay_points.png"><IMG 
+      height=120 alt="" 
+      src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/120px-Delaunay_points.png" 
+      width=120></A></DIV></DIV>
+      <DIV class=gallerytext>
+      <P><B>Fig. 1.</B> De algunos puntos se quiere construir una 
+      triangulación.</P></DIV></DIV></TD>
+    <TD>
+      <DIV class=gallerybox style="WIDTH: 155px">
+      <DIV class=thumb 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 13px; WIDTH: 150px; PADDING-TOP: 13px">
+      <DIV style="MARGIN-LEFT: auto; WIDTH: 120px; MARGIN-RIGHT: auto"><A 
+      class=image title="Delaunay triangulation small.png" 
+      href="http://es.wikipedia.org/wiki/Archivo:Delaunay_triangulation_small.png"><IMG 
+      height=120 alt="" 
+      src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/120px-Delaunay_triangulation_small.png" 
+      width=120></A></DIV></DIV>
+      <DIV class=gallerytext>
+      <P><B>Fig. 2.</B> Es fácil construir cualquiera triangulación simplemente 
+      conectando los vértices.</P></DIV></DIV></TD>
+    <TD>
+      <DIV class=gallerybox style="WIDTH: 155px">
+      <DIV class=thumb 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 13px; WIDTH: 150px; PADDING-TOP: 13px">
+      <DIV style="MARGIN-LEFT: auto; WIDTH: 120px; MARGIN-RIGHT: auto"><A 
+      class=image title="Delaunay circumcircles.png" 
+      href="http://es.wikipedia.org/wiki/Archivo:Delaunay_circumcircles.png"><IMG 
+      height=120 alt="" 
+      src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/117px-Delaunay_circumcircles.png" 
+      width=117></A></DIV></DIV>
+      <DIV class=gallerytext>
+      <P><B>Fig. 3.</B> Con la condición de Delauany se puede examinar si la 
+      triangulación es útil.</P></DIV></DIV></TD></TR></TBODY></TABLE>
+<P><A id=Condici.C3.B3n_de_Delaunay name=Condici.C3.B3n_de_Delaunay></A></P>
+<H2><SPAN class=editsection>[<A title="Editar sección: Condición de Delaunay" 
+href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=edit&amp;section=2">editar</A>]</SPAN> 
+<SPAN class=mw-headline>Condición de Delaunay</SPAN></H2>
+<DIV class="thumb tright">
+<DIV class=thumbinner style="WIDTH: 182px"><A class=image 
+title="Fig. 4. Los tres vértices A, B, C del triángulo ABC están a la misma distancia del circuncentro O." 
+href="http://es.wikipedia.org/wiki/Archivo:Circumcenter.png"><IMG 
+class=thumbimage height=167 alt="" 
+src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/180px-Circumcenter.png" 
+width=180></A> 
+<DIV class=thumbcaption>
+<DIV class=magnify><A class=internal title=Aumentar 
+href="http://es.wikipedia.org/wiki/Archivo:Circumcenter.png"><IMG height=11 
+alt="" 
+src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/magnify-clip.png" 
+width=15></A></DIV><B>Fig. 4.</B> Los tres vértices A, B, C del triángulo ABC 
+están a la misma distancia del circuncentro O.</DIV></DIV></DIV>
+<P>La <A title=Circuncentro 
+href="http://es.wikipedia.org/wiki/Circuncentro">circunferencia circunscrita</A> 
+de un triángulo es la <A title=Circunferencia 
+href="http://es.wikipedia.org/wiki/Circunferencia">circunferencia</A> que 
+contiene los tres vértices del triángulo.</P>
+<P>Según la definición de Delaunay la circunferencia circunscrita es 
+<I>vacía</I>, si no contiene otros vértices aparte de los tres que la 
+definen.</P>
+<P>La condición de Delaunay dice que una red de triángulos es una 
+<I>triangulación de Delaunay</I> si todas las circunferencias circunscritas de 
+todos los triángulos de la red son vacías. Esa es la definición original para <A 
+title=Dimensión href="http://es.wikipedia.org/wiki/DimensiÃ³n">espacios 
+bidimensionales</A>. Es posible ampliarla para espacios tridimensionales usando 
+la esfera circunscrita en vez de la circunferencia circunscrita. También es 
+posible ampliarla para espacios con más dimensiones pero no se usa en la 
+práctica.</P>
+<P>Esa condición asegura que los ángulos del interior de los triángulos son lo 
+más grandes posible. Es decir, maximiza la extensión del ángulo más pequeño de 
+la red.</P>
+<P><A id=Propiedades name=Propiedades></A></P>
+<H2><SPAN class=editsection>[<A title="Editar sección: Propiedades" 
+href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=edit&amp;section=3">editar</A>]</SPAN> 
+<SPAN class=mw-headline>Propiedades</SPAN></H2>
+<P>Triangulaciones de Delaunay tienen las propiedades siguientes:</P>
+<UL>
+  <LI>La triangulación forma la envolvente convexa del conjunto de puntos. 
+  <LI>El ángulo mínimo dentro de todos los triángulos está maximizado. 
+  <LI>La triangulación es unívoca si en ningún borde de circunferencia 
+  circunscrita hay más que tres vértices. </LI></UL>
+<P><A id=Relaci.C3.B3n_con_diagramas_de_Voronoi 
+name=Relaci.C3.B3n_con_diagramas_de_Voronoi></A></P>
+<H2><SPAN class=editsection>[<A 
+title="Editar sección: Relación con diagramas de Voronoi" 
+href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=edit&amp;section=4">editar</A>]</SPAN> 
+<SPAN class=mw-headline>Relación con diagramas de Voronoi</SPAN></H2>
+<P>La triangulación de Delaunay con todos los circuncentros es el grafo dual del 
+<A class=mw-redirect title="Diagrama de Voronoi" 
+href="http://es.wikipedia.org/wiki/Diagrama_de_Voronoi">diagrama de Voronoi</A>: 
+los circuncentros son los vértices de los segmentos del diagrama:</P>
+<TABLE class=gallery cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV class=gallerybox style="WIDTH: 155px">
+      <DIV class=thumb 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 13px; WIDTH: 150px; PADDING-TOP: 13px">
+      <DIV style="MARGIN-LEFT: auto; WIDTH: 120px; MARGIN-RIGHT: auto"><A 
+      class=image title="Delaunay circumcircles centers.png" 
+      href="http://es.wikipedia.org/wiki/Archivo:Delaunay_circumcircles_centers.png"><IMG 
+      height=119 alt="" 
+      src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/120px-Delaunay_circumcircles_centers.png" 
+      width=120></A></DIV></DIV>
+      <DIV class=gallerytext>
+      <P><B>Fig. 5.</B> La triangulación con todas las circunferencias 
+      circunscritas y sus centros (en rojo).</P></DIV></DIV></TD>
+    <TD>
+      <DIV class=gallerybox style="WIDTH: 155px">
+      <DIV class=thumb 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 14px; WIDTH: 150px; PADDING-TOP: 14px">
+      <DIV style="MARGIN-LEFT: auto; WIDTH: 120px; MARGIN-RIGHT: auto"><A 
+      class=image title="Delaunay Voronoi.png" 
+      href="http://es.wikipedia.org/wiki/Archivo:Delaunay_Voronoi.png"><IMG 
+      height=117 alt="" 
+      src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/120px-Delaunay_Voronoi.png" 
+      width=120></A></DIV></DIV>
+      <DIV class=gallerytext>
+      <P><B>Fig. 6.</B> Conectando los centros de las circunferencias 
+      circunscritas se produce el diagrama de Voronoi (en 
+    rojo).</P></DIV></DIV></TD></TR></TBODY></TABLE>
+<P><A id=Flipping name=Flipping></A></P>
+<H2><SPAN class=editsection>[<A title="Editar sección: Flipping" 
+href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=edit&amp;section=5">editar</A>]</SPAN> 
+<SPAN class=mw-headline>Flipping</SPAN></H2>
+<P>De la geometría de los triángulos se puede deducir una característica 
+importante: Contemplando dos triángulos ABD y BCD con la arista común BD (ver 
+Fig. 7), si la suma de los ángulos α y γ es menor o igual a 180°, los triángulos 
+cumplen la condición de Delaunay.</P>
+<P>Eso es importante porque de esta propiedad se puede deducir el 
+<I>flipping</I> (del <A class=mw-redirect title="Lengua inglesa" 
+href="http://es.wikipedia.org/wiki/Lengua_inglesa">inglés</A> <I>flip</I> 
+«invertir»). Si los dos triángulos no cumplen la condición de Delaunay, 
+reemplazando la arista común BD por la arista común AC produce una triangulación 
+de Delaunay:</P>
+<TABLE class=gallery cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV class=gallerybox style="WIDTH: 155px">
+      <DIV class=thumb 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 13px; WIDTH: 150px; PADDING-TOP: 13px">
+      <DIV style="MARGIN-LEFT: auto; WIDTH: 120px; MARGIN-RIGHT: auto"><A 
+      class=image title="Delaunay geometry.png" 
+      href="http://es.wikipedia.org/wiki/Archivo:Delaunay_geometry.png"><IMG 
+      height=119 alt="" 
+      src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/100px-Delaunay_geometry.png" 
+      width=100></A></DIV></DIV>
+      <DIV class=gallerytext>
+      <P><B>Fig. 7.</B> Esta triangulación no cumple la condición de 
+      Delaunay.</P></DIV></DIV></TD>
+    <TD>
+      <DIV class=gallerybox style="WIDTH: 155px">
+      <DIV class=thumb 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 20px; WIDTH: 150px; PADDING-TOP: 20px">
+      <DIV style="MARGIN-LEFT: auto; WIDTH: 120px; MARGIN-RIGHT: auto"><A 
+      class=image title="Delaunay before flip.png" 
+      href="http://es.wikipedia.org/wiki/Archivo:Delaunay_before_flip.png"><IMG 
+      height=105 alt="" 
+      src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/120px-Delaunay_before_flip.png" 
+      width=120></A></DIV></DIV>
+      <DIV class=gallerytext>
+      <P><B>Fig. 8.</B> Esta triangulación no cumple la condición de 
+      Delaunay.</P></DIV></DIV></TD>
+    <TD>
+      <DIV class=gallerybox style="WIDTH: 155px">
+      <DIV class=thumb 
+      style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 13px; WIDTH: 150px; PADDING-TOP: 13px">
+      <DIV style="MARGIN-LEFT: auto; WIDTH: 120px; MARGIN-RIGHT: auto"><A 
+      class=image title="Delaunay after flip.png" 
+      href="http://es.wikipedia.org/wiki/Archivo:Delaunay_after_flip.png"><IMG 
+      height=119 alt="" 
+      src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/109px-Delaunay_after_flip.png" 
+      width=109></A></DIV></DIV>
+      <DIV class=gallerytext>
+      <P><B>Fig. 9.</B> <I>Flipping</I> de la arista común produce una 
+      triangulación que cumple la condición de 
+  Delaunay.</P></DIV></DIV></TD></TR></TBODY></TABLE>
+<P><A id=Construcci.C3.B3n_algoritmo name=Construcci.C3.B3n_algoritmo></A></P>
+<H2><SPAN class=editsection>[<A title="Editar sección: Construcción algoritmo" 
+href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=edit&amp;section=6">editar</A>]</SPAN> 
+<SPAN class=mw-headline>Construcción algoritmo</SPAN></H2>
+<P>Hay varios algoritmos que sirven para crear una triangulación de Delaunay a 
+partir de un conjunto de puntos. En todos estos algoritmos hay que inspeccionar 
+si un vértice está dentro de una circunferencia circunscrita o no, así que este 
+test tiene que ser muy eficiente. Por supuesto es posible computar el 
+circuncentro y la circunferencia circunscrita y después examinar si el vértice 
+está dentro del círculo, pero hay un test más simple y eficiente que usa el <A 
+class=mw-redirect title="Determinante (matemáticas)" 
+href="http://es.wikipedia.org/wiki/Determinante_(matemÃ¡ticas)">determinante de 
+una matriz</A>.</P>
+<P>En dos dimensiones. Si los tres puntos A, B y C forman un triángulo —con los 
+puntos denominados en sentido contrario al de las agujas del reloj—, el punto D 
+está dentro de su circunferencia circunscrita si:</P>
+<CENTER>
+<P><IMG class=tex 
+alt="\begin{vmatrix}&#10;A_x &amp; A_y &amp; A_x^2 + A_y^2 &amp; 1\\&#10;B_x &amp; B_y &amp; B_x^2 + B_y^2 &amp; 1\\&#10;C_x &amp; C_y &amp; C_x^2 + C_y^2 &amp; 1\\&#10;D_x &amp; D_y &amp; D_x^2 + D_y^2 &amp; 1&#10;\end{vmatrix} = \begin{vmatrix}&#10;A_x - D_x &amp; A_y - D_y &amp; (A_x - D_x)^2 + (A_y - D_y)^2 \\&#10;B_x - D_x &amp; B_y - D_y &amp; (B_x - D_x)^2 + (B_y - D_y)^2 \\&#10;C_x - D_x &amp; C_y - D_y &amp; (C_x - D_x)^2 + (C_y - D_y)^2 \\&#10;\end{vmatrix} > 0&#10;" 
+src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/e850fa1309987071fc519cb28fc06232.png"></P></CENTER>
+<P>Es decir, si el determinante de este matriz es mayor que 0. En este caso es 
+suficiente conocer el signo aritmético, así que este cómputo puede ser acelerado 
+fácilmente.<SUP class=reference id=cite_ref-1><A 
+href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_note-1"><SPAN 
+class=corchete-llamada>[</SPAN>2<SPAN 
+class=corchete-llamada>]</SPAN></A></SUP></P>
+<P><A id=Incremental_construction name=Incremental_construction></A></P>
+<H3><SPAN class=editsection>[<A title="Editar sección: Incremental construction" 
+href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=edit&amp;section=7">editar</A>]</SPAN> 
+<SPAN class=mw-headline><I>Incremental construction</I></SPAN></H3>
+<P>El algoritmo <I>Incremental construction</I> (inglés para «construcción 
+incremental») realiza la idea: añadir un vértice a una triangulación de Delaunay 
+y corregir la red hasta que todos los triángulos cumplan de nuevo la condición 
+de Delaunay.</P>
+<P>Hay varias posibilidades para seleccionar el vértice siguiente, 
+incidentalmente, ordenado por una coordenada o usando un <A class=mw-redirect 
+title="Árbol (programación)" 
+href="http://es.wikipedia.org/wiki/Ãrbol_(programaciÃ³n)">árbol</A>. La 
+selección del vértice siguiente tiene una gran influencia en el tiempo de 
+ejecución del algoritmo.</P>
+<P><A id=Divide_and_conquer name=Divide_and_conquer></A></P>
+<H3><SPAN class=editsection>[<A title="Editar sección: Divide and conquer" 
+href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=edit&amp;section=8">editar</A>]</SPAN> 
+<SPAN class=mw-headline><I>Divide and conquer</I></SPAN></H3>
+<P>Este algoritmo usa el principio conocido como <I>divide and conquer</I> 
+(inglés para «divide y vencerás»): dividir el conjunto de puntos en dos partes 
+de igual tamaño, calcular la triangulación de Delaunay para cada parte 
+individualmente y después reunir las dos triangulaciones corrigiendo los 
+errores.</P>
+<P>La idea de usar el principio <I>divide and conquer</I> para computar un 
+diagrama de Voronoi en dos dimensiones fue introducida en 1975.<SUP 
+class=reference id=cite_ref-2><A 
+href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_note-2"><SPAN 
+class=corchete-llamada>[</SPAN>3<SPAN class=corchete-llamada>]</SPAN></A></SUP> 
+La idea fue revisada en 1980 para computar la triangulación de Delaunay<SUP 
+class=reference id=cite_ref-3><A 
+href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_note-3"><SPAN 
+class=corchete-llamada>[</SPAN>4<SPAN class=corchete-llamada>]</SPAN></A></SUP> 
+y mejorada por Guibas y Stolfi in 1985.<SUP class=reference id=cite_ref-4><A 
+href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_note-4"><SPAN 
+class=corchete-llamada>[</SPAN>5<SPAN class=corchete-llamada>]</SPAN></A></SUP> 
+En 1986 Dwyer presentó una modificación que mejoró la cota ajustada 
+asintótica<SUP class=reference id=cite_ref-5><A 
+href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_note-5"><SPAN 
+class=corchete-llamada>[</SPAN>6<SPAN class=corchete-llamada>]</SPAN></A></SUP> 
+y en 1992 Leach presentó otra aceleración del método.<SUP class=reference 
+id=cite_ref-Leach1992_6-0><A 
+href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_note-Leach1992-6"><SPAN 
+class=corchete-llamada>[</SPAN>7<SPAN class=corchete-llamada>]</SPAN></A></SUP> 
+En 1997 Cigoni, Montani y Scopigno presentaron el algoritmo <I>DeWall</I>, que 
+hace posible el cálculo de una triangulación de Delaunay usando <I>divide and 
+conquer</I> para cualquier número de dimensiones.<SUP class=reference 
+id=cite_ref-7><A 
+href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_note-7"><SPAN 
+class=corchete-llamada>[</SPAN>8<SPAN 
+class=corchete-llamada>]</SPAN></A></SUP></P>
+<P>Usando el algoritmo más avanzado, ese método resulta en una <A 
+title="Cota superior asintótica" 
+href="http://es.wikipedia.org/wiki/Cota_superior_asintÃ³tica">cota superior 
+asintótica</A> de O(n log n)<SUP class=reference id=cite_ref-Leach1992_6-1><A 
+href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_note-Leach1992-6"><SPAN 
+class=corchete-llamada>[</SPAN>7<SPAN class=corchete-llamada>]</SPAN></A></SUP> 
+y una <A title="Cota ajustada asintótica" 
+href="http://es.wikipedia.org/wiki/Cota_ajustada_asintÃ³tica">cota ajustada 
+asintótica</A> de O(n log (log n)); en algunos casos especiales es posible 
+reducir la cota ajustada a la cota superior.</P>
+<P><A id=Sweepline name=Sweepline></A></P>
+<H3><SPAN class=editsection>[<A title="Editar sección: Sweepline" 
+href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=edit&amp;section=9">editar</A>]</SPAN> 
+<SPAN class=mw-headline><I>Sweepline</I></SPAN></H3>
+<P>El algoritmo <I>sweepline</I> (inglés para «recorrer la línea») se basa en un 
+principio similar a la construcción incremental: construir una pequeña parte de 
+la triangulación final y después seguir añadiendo vértices hasta que la 
+triangulación esté completa. La diferencia estriba en que no hay que corregir 
+ningún error.</P>
+<P><A id=Enlaces_externos name=Enlaces_externos></A></P>
+<H2><SPAN class=editsection>[<A title="Editar sección: Enlaces externos" 
+href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=edit&amp;section=10">editar</A>]</SPAN> 
+<SPAN class=mw-headline>Enlaces externos</SPAN></H2>
+<UL>
+  <LI><A class="external text" 
+  title=http://www.cse.unsw.edu.au/~lambert/java/3d/delaunay.html 
+  href="http://www.cse.unsw.edu.au/~lambert/java/3d/delaunay.html" 
+  rel=nofollow>UNSW Engineering - School of Computer Science and Engineering, 
+  Austria: Delaunay Triangulation Algorithms</A> — applet Java que demuestra los 
+  algoritmos <I>Incremental construction</I>, <I>Gift wrap</I>, <I>Divide and 
+  conquer</I> y <I>QuickHull</I> (en inglés) 
+  <LI><A class="external text" 
+  title=http://www.ics.uci.edu/~eppstein/gina/delaunay.html 
+  href="http://www.ics.uci.edu/~eppstein/gina/delaunay.html" rel=nofollow>Prof. 
+  David Eppstein, University of California, Irvine: Geometry in action - 
+  Delaunay triangulation</A> — aplicaciones de la triangulación de Delaunay en 
+  geometría por computadora (en inglés) 
+  <LI><A class="external text" 
+  title=http://www.dma.fi.upm.es/docencia/segundociclo/geomcomp/voronoi.html 
+  href="http://www.dma.fi.upm.es/docencia/segundociclo/geomcomp/voronoi.html" 
+  rel=nofollow>Universidad Politécnica de Madrid - Departamento de Matemática 
+  Aplicada: Geometría Computacional</A> — varios applets que demuestran la 
+  triangulación de Delaunay y diagramas de Voronoi </LI></UL>
+<P><A id=Fuentes name=Fuentes></A></P>
+<H2><SPAN class=editsection>[<A title="Editar sección: Fuentes" 
+href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=edit&amp;section=11">editar</A>]</SPAN> 
+<SPAN class=mw-headline>Fuentes</SPAN></H2>
+<OL class=references>
+  <LI id=cite_note-0><A 
+  href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_ref-0">↑</A> B. 
+  Delaunay: <I>Sur la sphere vide. A la mémoire de Georges Voronoi.</I> 
+  <I>Izvestia Akademii Nauk SSSR, Otdelenie Matematicheskikh i Estestvennykh 
+  Nauk</I> (Bulletin of Academy of Sciences of the USSR), 7, págs. 793-800, 1934 
+
+  <LI id=cite_note-1><A 
+  href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_ref-1">↑</A> 
+  Jonathan Richard Shewchuk: <A class="external text" 
+  title=http://rioja.sangria.cs.cmu.edu/tumble/papers/robust-arithmetic.pdf 
+  href="http://rioja.sangria.cs.cmu.edu/tumble/papers/robust-arithmetic.pdf" 
+  rel=nofollow><I>Adaptive Precision Floating-Point Arithmetic and Fast Robust 
+  Geometric Predicates.</I> In <I>Discrete &amp; Computational Geometry,</I></A> 
+  18:305-363, 1997 
+  <LI id=cite_note-2><A 
+  href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_ref-2">↑</A> M. 
+  I. Shamos, D. Hoey: <A class="external text" 
+  title=http://www.mif.vu.lt/cs2/courses/Geom28.pdf 
+  href="http://www.mif.vu.lt/cs2/courses/Geom28.pdf" 
+  rel=nofollow><I>Closest-point problems.</I></A> In <I>Proceedings of the 16th 
+  IEEE Symposium on Foundations of Computer Science,</I> págs. 151-162, 1975 
+  <LI id=cite_note-3><A 
+  href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_ref-3">↑</A> D. 
+  T. Lee, B. Schachter: <I>Two Algorithms for Constructing Delaunay 
+  Triangulations.</I> In <I>International Journal of Computer Information 
+  Sciences,</I> 9(3):219-242, 1980 
+  <LI id=cite_note-4><A 
+  href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_ref-4">↑</A> L. 
+  Guibas, J. Stolfi: <I>Primitives for the Manipulation of General Subdivisions 
+  and the Computation of Vornoi Diagrams.</I> In <I>ACM Transactions on 
+  Graphics,</I> 4:74-123, April 1985 
+  <LI id=cite_note-5><A 
+  href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_ref-5">↑</A> R. 
+  A. Dwyer: <I>A simple divide-and-conquer algorithm for computing Delaunay 
+  triangulations in O(n log log n) expected time.</I> In <I>Proceedings of the 
+  second annual symposium on Computational geometry,</I> págs. 276-284, 1986 
+  <LI id=cite_note-Leach1992-6>↑ <A 
+  href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_ref-Leach1992_6-0"><SUP><I><B>a</B></I></SUP></A> 
+  <A 
+  href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_ref-Leach1992_6-1"><SUP><I><B>b</B></I></SUP></A> 
+  G. Leach: <A class="external text" 
+  title=http://center.cie.hallym.ac.kr/~gve/gvehome/labseminar/presentations/short_paper.pdf 
+  href="http://center.cie.hallym.ac.kr/~gve/gvehome/labseminar/presentations/short_paper.pdf" 
+  rel=nofollow><I>Improving Worst-Case Optimal Delaunay Triangulation 
+  Algorithms.</I></A> June 1992 
+  <LI id=cite_note-7><A 
+  href="http://es.wikipedia.org/wiki/CondiciÃ³n_de_Delaunay#cite_ref-7">↑</A> P. 
+  Cignoni, C. Montani, R. Scopigno: <A class="external text" 
+  title=http://vcg.isti.cnr.it/publications/papers/dewall.pdf 
+  href="http://vcg.isti.cnr.it/publications/papers/dewall.pdf" 
+  rel=nofollow><I>DeWall: A Fast Divide And Conquer Delaunay Triangulation 
+  Algorithm in E<SUP>d</SUP>.</I></A> October 1997 </LI></OL><!-- 
+NewPP limit report
+Preprocessor node count: 170/1000000
+Post-expand include size: 639/2048000 bytes
+Template argument size: 8/2048000 bytes
+Expensive parser function count: 0/500
+--><!-- Saved in parser cache with key eswiki:pcache:idhash:351006-0!1!0!!es!2 and timestamp 20090616121741 -->
+<DIV class=printfooter>Obtenido de "<A 
+href="http://es.wikipedia.org/wiki/TriangulaciÃ³n_de_Delaunay">http://es.wikipedia.org/wiki/TriangulaciÃ³n_de_Delaunay</A>"</DIV>
+<DIV class=catlinks id=catlinks>
+<DIV id=mw-normal-catlinks><A title=Especial:Categorías 
+href="http://es.wikipedia.org/wiki/Especial:CategorÃ&shy;as">Categorías</A>: 
+<SPAN dir=ltr><A title="Categoría:Aplicaciones gráficas" 
+href="http://es.wikipedia.org/wiki/CategorÃ&shy;a:Aplicaciones_grÃ¡ficas">Aplicaciones 
+gráficas</A></SPAN> | <SPAN dir=ltr><A title="Categoría:Algoritmos geométricos" 
+href="http://es.wikipedia.org/wiki/CategorÃ&shy;a:Algoritmos_geomÃ©tricos">Algoritmos 
+geométricos</A></SPAN> | <SPAN dir=ltr><A title="Categoría:Geometría discreta" 
+href="http://es.wikipedia.org/wiki/CategorÃ&shy;a:GeometrÃ&shy;a_discreta">Geometría 
+discreta</A></SPAN></DIV></DIV><!-- end content -->
+<DIV class=visualClear></DIV></DIV></DIV></DIV>
+<DIV id=column-one>
+<DIV class=portlet id=p-cactions>
+<H5>Vistas</H5>
+<DIV class=pBody>
+<UL lang=es xml:lang="es">
+  <LI class=selected id=ca-nstab-main><A title="Ver el artículo [c]" accessKey=c 
+  href="http://es.wikipedia.org/wiki/TriangulaciÃ³n_de_Delaunay">Artículo</A> 
+  <LI class=new id=ca-talk><A title="Discusión acerca del artículo [t]" 
+  accessKey=t 
+  href="http://es.wikipedia.org/w/index.php?title=Discusi%C3%B3n:Triangulaci%C3%B3n_de_Delaunay&amp;action=edit&amp;redlink=1">Discusión</A> 
+
+  <LI id=ca-edit><A 
+  title="Puede editar esta página. Por favor, use el botón de previsualización antes de grabar. [e]" 
+  accessKey=e 
+  href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=edit">Editar</A> 
+
+  <LI id=ca-history><A 
+  title="Versiones anteriores de esta página y sus autores [h]" accessKey=h 
+  href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;action=history">Historial</A> 
+  </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-personal>
+<H5>Herramientas personales</H5>
+<DIV class=pBody>
+<UL lang=es xml:lang="es">
+  <LI id=pt-login><A 
+  title="Le animamos a registrarse, aunque no es obligatorio [o]" accessKey=o 
+  href="http://es.wikipedia.org/w/index.php?title=Especial:Entrar&amp;returnto=Triangulaci%C3%B3n_de_Delaunay">Registrarse/Entrar</A> 
+  </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-logo><A title="Portada [z]" 
+style="BACKGROUND-IMAGE: url(http://upload.wikimedia.org/wikipedia/commons/7/74/Wikipedia-logo-es.png)" 
+accessKey=z href="http://es.wikipedia.org/wiki/Wikipedia:Portada"></A></DIV>
+<SCRIPT type=text/javascript> if (window.isMSIE55) fixalpha(); </SCRIPT>
+
+<DIV class=portlet id=p-search>
+<H5 lang=es xml:lang="es"><LABEL for=searchInput>Buscar</LABEL></H5>
+<DIV class=pBody id=searchBody>
+<FORM id=searchform action=/w/index.php>
+<DIV><INPUT type=hidden value=Especial:Buscar name=title> <INPUT id=searchInput 
+title="Buscar en este wiki [f]" accessKey=f name=search> <INPUT class=searchButton id=searchGoButton title="Ir al artículo con este nombre exacto si existe" type=submit value=Ir name=go>&nbsp; 
+<INPUT class=searchButton id=mw-searchButton title="Busca páginas con este texto." type=submit value=Buscar name=fulltext> 
+</DIV></FORM></DIV></DIV>
+<DIV class="generated-sidebar portlet" id=p-navigation>
+<H5 lang=es xml:lang="es">Navegación</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=n-mainpage-description><A 
+  href="http://es.wikipedia.org/wiki/Wikipedia:Portada">Portada</A> 
+  <LI id=n-portal><A 
+  title="Acerca del proyecto, qué puede hacer, dónde encontrar información" 
+  href="http://es.wikipedia.org/wiki/Portal:Comunidad">Portal de la 
+  comunidad</A> 
+  <LI id=n-currentevents><A 
+  title="Información de contexto sobre acontecimientos actuales" 
+  href="http://es.wikipedia.org/wiki/Portal:Actualidad">Actualidad</A> 
+  <LI id=n-recentchanges><A title="La lista de cambios recientes en el wiki [r]" 
+  accessKey=r 
+  href="http://es.wikipedia.org/wiki/Especial:CambiosRecientes">Cambios 
+  recientes</A> 
+  <LI id=n-randompage><A title="Cargar una página aleatoriamente [x]" 
+  accessKey=x href="http://es.wikipedia.org/wiki/Especial:Aleatoria">Página 
+  aleatoria</A> 
+  <LI id=n-help><A title="El lugar para aprender" 
+  href="http://es.wikipedia.org/wiki/Ayuda:Contenidos">Ayuda</A> 
+  <LI id=n-sitesupport><A title=Apóyenos 
+  href="http://wikimediafoundation.org/wiki/Donaciones">Donaciones</A> 
+</LI></UL></DIV></DIV>
+<DIV class="generated-sidebar portlet" id=p-coll-create_a_book>
+<H5 lang=es xml:lang="es">Crear un libro</H5>
+<DIV class=pBody>
+<UL id=collectionPortletList>
+  <LI id=coll-add_page><A title="Agregar la página wiki actual a tu libro" 
+  onclick="collectionCall('AddArticle', ['removepage', wgNamespaceNumber, wgTitle, 0]); return false;" 
+  href="http://es.wikipedia.org/w/index.php?title=Especial:Libro/add_article/&amp;arttitle=Triangulaci%C3%B3n+de+Delaunay&amp;oldid=0" 
+  rel=nofollow>Añadir esta página</A>
+  <LI id=coll-help_collections><A 
+  title="Mostrar ayuda acerca de la herramienta libro" 
+  href="http://es.wikipedia.org/wiki/Ayuda:Libros">Ayuda de libros</A></LI></UL>
+<SCRIPT type=text/javascript>/*<![CDATA[*/
+		var wgCollectionAddRemoveSate = "addpage";
+		/*]]>*/</SCRIPT>
+
+<SCRIPT 
+src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/portlet.js" 
+type=text/javascript></SCRIPT>
+</DIV></DIV>
+<DIV class=portlet id=p-tb>
+<H5 lang=es xml:lang="es">Herramientas</H5>
+<DIV class=pBody>
+<UL>
+  <LI id=t-whatlinkshere><A 
+  title="Lista de todas las páginas del wiki que enlazan con ésta [j]" 
+  accessKey=j 
+  href="http://es.wikipedia.org/wiki/Especial:LoQueEnlazaAquÃ&shy;/TriangulaciÃ³n_de_Delaunay">Lo 
+  que enlaza aquí</A> 
+  <LI id=t-recentchangeslinked><A 
+  title="Cambios recientes en las páginas que enlazan con ésta [k]" accessKey=k 
+  href="http://es.wikipedia.org/wiki/Especial:CambiosEnEnlazadas/TriangulaciÃ³n_de_Delaunay">Cambios 
+  relacionados</A> 
+  <LI id=t-upload><A title="Subir imágenes o archivos multimedia [u]" 
+  accessKey=u href="http://commons.wikimedia.org/wiki/Commons:Upload/es">Subir 
+  archivo</A> 
+  <LI id=t-specialpages><A title="Lista de todas las páginas especiales [q]" 
+  accessKey=q 
+  href="http://es.wikipedia.org/wiki/Especial:PÃ¡ginasEspeciales">Páginas 
+  especiales</A> 
+  <LI id=t-print><A title="Versión imprimible de la página [p]" accessKey=p 
+  href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;printable=yes" 
+  rel=alternate>Versión para imprimir</A> 
+  <LI id=t-permalink><A title="Enlace permanente a esta versión de la página" 
+  href="http://es.wikipedia.org/w/index.php?title=Triangulaci%C3%B3n_de_Delaunay&amp;oldid=22384914">Enlace 
+  permanente</A>
+  <LI id=t-download-as-pdf><A 
+  href="http://es.wikipedia.org/w/index.php?title=Especial:Libro/render_article/&amp;arttitle=Triangulaci%C3%B3n_de_Delaunay&amp;oldid=22384914&amp;writer=rl" 
+  rel=nofollow>Versión en PDF</A>
+  <LI id=t-cite><A 
+  href="http://es.wikipedia.org/w/index.php?title=Especial:Citar&amp;page=Triangulaci%C3%B3n_de_Delaunay&amp;id=22384914">Citar 
+  este artículo</A> </LI></UL></DIV></DIV>
+<DIV class=portlet id=p-lang>
+<H5 lang=es xml:lang="es">En otros idiomas</H5>
+<DIV class=pBody>
+<UL>
+  <LI class=interwiki-ar><A 
+  href="http://ar.wikipedia.org/wiki/ØªØ«ÙÙØ«_Ø¯ÙÙØ§ÙÙÙ">العربية</A> 
+  <LI class=interwiki-de><A 
+  href="http://de.wikipedia.org/wiki/Delaunay-Triangulation">Deutsch</A> 
+  <LI class=interwiki-en><A 
+  href="http://en.wikipedia.org/wiki/Delaunay_triangulation">English</A> 
+  <LI class=interwiki-fr><A 
+  href="http://fr.wikipedia.org/wiki/Triangulation_de_Delaunay">Français</A> 
+  <LI class=interwiki-he><A 
+  href="http://he.wikipedia.org/wiki/×©××××©_××××&nbsp;×">עברית</A> 
+  <LI class=interwiki-ja><A 
+  href="http://ja.wikipedia.org/wiki/ãã&shy;ãã¼å³">日本語</A> 
+  <LI class=interwiki-pl><A 
+  href="http://pl.wikipedia.org/wiki/Triangulacja_Delone">Polski</A> 
+  <LI class=interwiki-ru><A 
+  href="http://ru.wikipedia.org/wiki/Ð¢ÑÐ¸Ð°Ð½Ð³ÑÐ»ÑÑÐ¸Ñ_ÐÐµÐ»Ð¾Ð½Ðµ">Русский</A> 
+
+  <LI class=interwiki-sl><A 
+  href="http://sl.wikipedia.org/wiki/Delaunayeva_triangulacija">Slovenščina</A> 
+  <LI class=interwiki-uk><A 
+  href="http://uk.wikipedia.org/wiki/Ð¢ÑÐ¸Ð°Ð½Ð³ÑÐ»ÑÑÑÑ_ÐÐµÐ»Ð¾Ð½Ðµ">Українська</A> 
+  </LI></UL></DIV></DIV></DIV><!-- end of the left (by default at least) column -->
+<DIV class=visualClear></DIV>
+<DIV id=footer>
+<DIV id=f-poweredbyico><A href="http://www.mediawiki.org/"><IMG 
+alt="Powered by MediaWiki" 
+src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/poweredby_mediawiki_88x31.png"></A></DIV>
+<DIV id=f-copyrightico><A href="http://wikimediafoundation.org/"><IMG 
+alt="Wikimedia Foundation" 
+src="Triangulación de Delaunay - Wikipedia, la enciclopedia libre_archivos/wikimedia-button.png" 
+border=0></A></DIV>
+<UL id=f-list>
+  <LI id=lastmod>Esta página fue modificada por última vez el 21:55, 10 dic 
+  2008. 
+  <LI id=copyright>Contenido disponible bajo los términos de la <A 
+  class=internal 
+  href="http://es.wikipedia.org/wiki/Wikipedia:Texto_de_la_Licencia_de_documentación_libre_de_GNU">Licencia 
+  de documentación libre de GNU</A> (véase <B><A class=internal 
+  href="http://es.wikipedia.org/wiki/Wikipedia:Derechos_de_autor">Derechos de 
+  autor</A></B>).<BR>Wikipedia® es una marca registrada de la organización sin 
+  ánimo de lucro <A class=internal 
+  href="http://wikimediafoundation.org/wiki/Portada">Wikimedia Foundation, 
+  Inc.</A><BR>
+  <LI id=privacy><A class=extiw title="wikimedia:Política de privacidad" 
+  href="http://wikimediafoundation.org/wiki/PolÃ&shy;tica_de_privacidad">Política 
+  de privacidad</A> 
+  <LI id=about><A title="Wikipedia:Acerca de" 
+  href="http://es.wikipedia.org/wiki/Wikipedia:Acerca_de">Acerca de 
+  Wikipedia</A> 
+  <LI id=disclaimer><A title="Wikipedia:Limitación general de responsabilidad" 
+  href="http://es.wikipedia.org/wiki/Wikipedia:LimitaciÃ³n_general_de_responsabilidad">Limitación 
+  de responsabilidad</A> </LI></UL></DIV></DIV>
+<SCRIPT type=text/javascript>if (window.runOnloadHook) runOnloadHook();</SCRIPT>
+<!-- Served by srv120 in 0.261 secs. --></BODY></HTML>

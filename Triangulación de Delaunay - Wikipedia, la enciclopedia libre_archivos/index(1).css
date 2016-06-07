@@ -1,0 +1,109 @@
+
+@media Print    
+{
+#content {
+	BACKGROUND: white
+}
+    }
+A {
+	TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+UNKNOWN {
+	TEXT-TRANSFORM: lowercase
+}
+BODY.page-Wikipedia_Portada H1.firstHeading {
+	DISPLAY: none
+}
+BODY.page-Wikipedia_Portada#catlinks {
+	DISPLAY: none
+}
+.citado {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #f9f9f9
+}
+DIV.alreadyloggedin {
+	FONT-WEIGHT: bold; COLOR: red
+}
+FORM#userlogin {
+	BORDER-RIGHT: #fc6 2px solid; PADDING-RIGHT: 1em; BORDER-TOP: #fc6 2px solid; PADDING-LEFT: 1em; FLOAT: left; PADDING-BOTTOM: 0.7em; BORDER-LEFT: #fc6 2px solid; COLOR: #000; MARGIN-RIGHT: 2em; PADDING-TOP: 1em; BORDER-BOTTOM: #fc6 2px solid; BACKGROUND-COLOR: #ffffe6
+}
+FORM#userlogin TABLE {
+	FLOAT: left; COLOR: #000; BACKGROUND-COLOR: #ffffe6
+}
+LI.destacado {
+	LIST-STYLE-IMAGE: url(http://upload.wikimedia.org/wikipedia/en/d/d4/Monobook-bullet-star.png); MARGIN-LEFT: 2px; LIST-STYLE-TYPE: square
+}
+LI.bueno {
+	LIST-STYLE-IMAGE: url(http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Art%C3%ADculo_bueno.svg/10px-Art%C3%ADculo_bueno.svg.png); MARGIN-LEFT: 2px; LIST-STYLE-TYPE: square
+}
+P.error {
+	FONT-WEIGHT: bold
+}
+.pBody {
+	PADDING-RIGHT: 0.1em; PADDING-LEFT: 0.1em; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0.3em; moz-border-radius-topright: 0.5em
+}
+.portlet H5 {
+	BORDER-RIGHT: silver thin solid; BORDER-TOP: silver thin solid; BORDER-LEFT: silver thin solid; BORDER-BOTTOM: silver thin solid; BACKGROUND-COLOR: #e0e3e6; moz-border-radius-topright: 0.5em
+}
+TABLE.metadata {
+	BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px solid; DISPLAY: none; BORDER-LEFT: #aaaaaa 1px solid; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+.metadata-label {
+	COLOR: #aaaaaa
+}
+.searchbox .searchboxInput {
+	BACKGROUND-COLOR: transparent
+}
+#content {
+	moz-border-radius-topleft: 0.5em
+}
+#coordinates {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; FONT-SIZE: 85%; Z-INDEX: 1; RIGHT: 20px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: right; PADDING-BOTTOM: 0em; MARGIN: 0em; TEXT-TRANSFORM: none; BORDER-TOP-STYLE: none; TEXT-INDENT: 0px; LINE-HEIGHT: 1.5em; PADDING-TOP: 0em; BORDER-RIGHT-STYLE: none; WHITE-SPACE: nowrap; BORDER-LEFT-STYLE: none; POSITION: absolute; TOP: 3.7em; TEXT-ALIGN: right; BORDER-BOTTOM-STYLE: none
+}
+#siteNotice {
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: -0.5em
+}
+#ca-edit A {
+	FONT-WEIGHT: bold! important
+}
+#mw-dismissable-notice {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#pt-login {
+	FONT-WEIGHT: bold; FONT-SIZE: 110%
+}
+DIV.BoxenVerschmelzen {
+	BORDER-RIGHT: #aaaaaa 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 95%; PADDING-BOTTOM: 2px; MARGIN: 0px; BORDER-LEFT: #aaaaaa 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #aaaaaa 1px solid; BORDER-COLLAPSE: collapse; TEXT-ALIGN: center
+}
+DIV.NavFrame {
+	BORDER-RIGHT: #aaaaaa 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 95%; PADDING-BOTTOM: 2px; MARGIN: 0px; BORDER-LEFT: #aaaaaa 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #aaaaaa 1px solid; BORDER-COLLAPSE: collapse; TEXT-ALIGN: center
+}
+DIV.BoxenVerschmelzen DIV.NavFrame {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+UNKNOWN {
+	
+}
+DIV.NavPic {
+	PADDING-RIGHT: 2px; DISPLAY: none; PADDING-LEFT: 2px; FLOAT: left; PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-TOP: 2px; BACKGROUND-COLOR: #ffffff
+}
+DIV.NavFrame DIV.NavHead {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%; HEIGHT: 1.6em; BACKGROUND-COLOR: #efefef
+}
+DIV.NavFrame P {
+	FONT-SIZE: 100%
+}
+DIV.NavFrame DIV.NavContent {
+	FONT-SIZE: 100%
+}
+DIV.NavFrame DIV.NavContent P {
+	FONT-SIZE: 100%
+}
+DIV.NavEnd {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; LINE-HEIGHT: 1px; PADDING-TOP: 0px
+}
+.NavToggle {
+	FONT-SIZE: x-small; FLOAT: right
+}

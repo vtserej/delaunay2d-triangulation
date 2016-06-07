@@ -1,0 +1,427 @@
+.infobox_v2 {
+	CLEAR: right; BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 0.4em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 0.4em; FONT-SIZE: 90%; BACKGROUND: #f9f9f9; FLOAT: right; PADDING-BOTTOM: 0.4em; MARGIN: 0.5em 0px 0.5em 1em; BORDER-LEFT: #aaa 1px solid; WIDTH: 22.5em; COLOR: #000; LINE-HEIGHT: 1.5em; PADDING-TOP: 0.4em; BORDER-BOTTOM: #aaa 1px solid
+}
+.infobox_v2 TD {
+	VERTICAL-ALIGN: top
+}
+.infobox_v2 TH {
+	VERTICAL-ALIGN: top; TEXT-ALIGN: left
+}
+.infobox_v2 .cabecera {
+	FONT-WEIGHT: bolder; FONT-SIZE: 140%; VERTICAL-ALIGN: middle; LINE-HEIGHT: 1.2em; HEIGHT: 45px; TEXT-ALIGN: center
+}
+.infobox_v2 .media {
+	FONT-WEIGHT: bolder; VERTICAL-ALIGN: middle; HEIGHT: 35px; TEXT-ALIGN: center
+}
+.default {
+	
+}
+.audio {
+	BACKGROUND: url(http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Gnome-speakernotes.png/35px-Gnome-speakernotes.png) no-repeat left top
+}
+.video {
+	BACKGROUND: url(http://upload.wikimedia.org/wikipedia/en/thumb/2/20/Tango-video-x-generic.png/35px-Tango-video-x-generic.png) no-repeat left top
+}
+.hiddenStructure {
+	DISPLAY: none; speak: none
+}
+.infobox {
+	CLEAR: right; BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 0.2em; FLOAT: right; MARGIN-BOTTOM: 0.5em; PADDING-BOTTOM: 0.2em; MARGIN-LEFT: 1em; BORDER-LEFT: #aaa 1px solid; COLOR: black; PADDING-TOP: 0.2em; BORDER-BOTTOM: #aaa 1px solid; BACKGROUND-COLOR: #f9f9f9
+}
+.infobox TD {
+	VERTICAL-ALIGN: top
+}
+.infobox TH {
+	VERTICAL-ALIGN: top
+}
+.infobox CAPTION {
+	FONT-SIZE: larger
+}
+.bordered {
+	BORDER-COLLAPSE: collapse
+}
+.bordered TD {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BORDER-LEFT: #aaa 1px solid; BORDER-BOTTOM: #aaa 1px solid
+}
+.bordered TH {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BORDER-LEFT: #aaa 1px solid; BORDER-BOTTOM: #aaa 1px solid
+}
+.bordered .borderless TD {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.bordered .borderless TH {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.sisterproject {
+	FONT-SIZE: 90%; WIDTH: 20em
+}
+
+@media Print    
+{
+.sisterproject {
+	DISPLAY: none
+}
+    }
+.InfoDerecha {
+	CLEAR: right; FLOAT: right; MARGIN: 0px 0px 1em 1em
+}
+.geography {
+	BORDER-RIGHT: #ccd2d9 1px solid; BORDER-TOP: #ccd2d9 1px solid; FONT-SIZE: 90%; BORDER-LEFT: #ccd2d9 1px solid; LINE-HEIGHT: 1.2em; BORDER-BOTTOM: #ccd2d9 1px solid; BORDER-COLLAPSE: collapse; TEXT-ALIGN: left
+}
+.geography TD {
+	PADDING-RIGHT: 0.2em; BORDER-TOP: #ccd2d9 1px solid; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.4em; PADDING-TOP: 0.4em
+}
+.geography TH {
+	PADDING-RIGHT: 0.2em; BORDER-TOP: #ccd2d9 1px solid; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.4em; PADDING-TOP: 0.4em
+}
+.geography .mergedtoprow TD {
+	PADDING-RIGHT: 0.2em; BORDER-TOP: #ccd2d9 1px solid; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.4em
+}
+.geography .mergedtoprow TH {
+	PADDING-RIGHT: 0.2em; BORDER-TOP: #ccd2d9 1px solid; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.4em
+}
+.geography .mergedrow TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0.2em; PADDING-LEFT: 0.8em; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.geography .mergedrow TH {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0.2em; PADDING-LEFT: 0.8em; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.geography .mergedbottomrow TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0.2em; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.4em; PADDING-TOP: 0px; BORDER-BOTTOM: #ccd2d9 1px solid
+}
+.geography .mergedbottomrow TH {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0.2em; PADDING-LEFT: 0.8em; PADDING-BOTTOM: 0.4em; PADDING-TOP: 0px; BORDER-BOTTOM: #ccd2d9 1px solid
+}
+.geography .maptable TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.geography .maptable TH {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TABLE.ambox {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BACKGROUND: #fbfbfb; MARGIN: 0px 10%; BORDER-LEFT: #1e90ff 10px solid; BORDER-BOTTOM: #aaa 1px solid; BORDER-COLLAPSE: collapse
+}
+TABLE.ambox TH.ambox-text {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.25em; WIDTH: 100%; PADDING-TOP: 0.25em
+}
+TABLE.ambox TD.ambox-text {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.25em; WIDTH: 100%; PADDING-TOP: 0.25em
+}
+TABLE.ambox TD.ambox-image {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; TEXT-ALIGN: center
+}
+TABLE.ambox TD.ambox-imageright {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; TEXT-ALIGN: center
+}
+TABLE.ambox-notice {
+	BORDER-LEFT: #1e90ff 10px solid
+}
+TABLE.ambox-delete {
+	BORDER-LEFT: #b22222 10px solid
+}
+TABLE.ambox-serious {
+	BORDER-LEFT: #b22222 10px solid
+}
+TABLE.ambox-content {
+	BORDER-LEFT: #f28500 10px solid
+}
+TABLE.ambox-style {
+	BORDER-LEFT: #f4c430 10px solid
+}
+TABLE.ambox-merge {
+	BORDER-LEFT: #9932cc 10px solid
+}
+TABLE.ambox-growth {
+	BORDER-LEFT: #228b22 10px solid
+}
+TABLE.ambox-protection {
+	BORDER-LEFT: #bba 10px solid
+}
+TABLE.ambox-mini {
+	CLEAR: right; FLOAT: right; MARGIN: 0px 0px 0px 1em; WIDTH: 25%
+}
+
+@media Print    
+{
+.ambox {
+	DISPLAY: none
+}
+    }
+.messagebox {
+	BORDER-RIGHT: #aaaaaa 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 0.2em; FONT-SIZE: 90%; PADDING-BOTTOM: 0.2em; MARGIN: 0px auto 1em; BORDER-LEFT: #aaaaaa 1px solid; WIDTH: 85%; PADDING-TOP: 0.2em; BORDER-BOTTOM: #aaaaaa 1px solid; BACKGROUND-COLOR: #f9f9f9; TEXT-ALIGN: justify
+}
+.merge {
+	BORDER-RIGHT: #cf9fff 1px solid; BORDER-TOP: #cf9fff 1px solid; BORDER-LEFT: #cf9fff 1px solid; BORDER-BOTTOM: #cf9fff 1px solid; BACKGROUND-COLOR: #f5edf5; TEXT-ALIGN: center
+}
+.cleanup {
+	BORDER-RIGHT: #9f9fff 1px solid; BORDER-TOP: #9f9fff 1px solid; BORDER-LEFT: #9f9fff 1px solid; BORDER-BOTTOM: #9f9fff 1px solid; BACKGROUND-COLOR: #efefff; TEXT-ALIGN: center
+}
+.standard-talk {
+	BORDER-RIGHT: #c0c090 1px solid; BORDER-TOP: #c0c090 1px solid; BORDER-LEFT: #c0c090 1px solid; BORDER-BOTTOM: #c0c090 1px solid; BACKGROUND-COLOR: #f8eaba; TEXT-ALIGN: center
+}
+.warning {
+	BORDER-RIGHT: #fcc 1px solid; BORDER-TOP: #fcc 1px solid; FONT-SIZE: 100%; BORDER-LEFT: #fcc 1px solid; BORDER-BOTTOM: #fcc 1px solid; BACKGROUND-COLOR: #fee; TEXT-ALIGN: center
+}
+OL.references {
+	FONT-SIZE: 100%
+}
+.references-small {
+	FONT-SIZE: 90%
+}
+.references-2column {
+	FONT-SIZE: 90%
+}
+UNKNOWN {
+	BACKGROUND-COLOR: #def
+}
+SUP.reference:unknown {
+	BACKGROUND-COLOR: #def
+}
+.corchete-llamada {
+	DISPLAY: none
+}
+
+@media Print    
+{
+.listaref {
+	moz-column-count: 1
+}
+    }
+.geo-default {
+	DISPLAY: inline
+}
+.geo-nondefault {
+	DISPLAY: none
+}
+.geo-dms {
+	DISPLAY: inline
+}
+.geo-dec {
+	DISPLAY: inline
+}
+.geo-multi-punct {
+	DISPLAY: none
+}
+.longitude .latitude {
+	WHITE-SPACE: nowrap
+}
+.geo {
+	
+}
+#disambig {
+	BORDER-TOP: #cccccc 3px double; BORDER-BOTTOM: #cccccc 3px double
+}
+.citado {
+	PADDING-RIGHT: 0.1em; PADDING-LEFT: 0.1em; FONT-SIZE: 90%; PADDING-BOTTOM: 0.1em; PADDING-TOP: 0.1em
+}
+.notice {
+	PADDING-RIGHT: 0.2em; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; MARGIN: 1em; PADDING-TOP: 0.2em; TEXT-ALIGN: justify
+}
+TABLE.wikitable {
+	BORDER-RIGHT: #aaaaaa 1px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 0.5em; FONT-SIZE: 95%; BACKGROUND: #f9f9f9; PADDING-BOTTOM: 0.5em; MARGIN: 1em; BORDER-LEFT: #aaaaaa 1px solid; PADDING-TOP: 0.5em; BORDER-BOTTOM: #aaaaaa 1px solid; BORDER-COLLAPSE: collapse
+}
+TABLE.prettytable {
+	BORDER-RIGHT: #aaaaaa 1px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 0.5em; FONT-SIZE: 95%; BACKGROUND: #f9f9f9; PADDING-BOTTOM: 0.5em; MARGIN: 1em; BORDER-LEFT: #aaaaaa 1px solid; PADDING-TOP: 0.5em; BORDER-BOTTOM: #aaaaaa 1px solid; BORDER-COLLAPSE: collapse
+}
+TABLE.wikitable TH {
+	BORDER-RIGHT: #aaaaaa 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #aaaaaa 1px solid; PADDING-TOP: 0.2em; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+TABLE.wikitable TD {
+	BORDER-RIGHT: #aaaaaa 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #aaaaaa 1px solid; PADDING-TOP: 0.2em; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+TABLE.prettytable TH {
+	BORDER-RIGHT: #aaaaaa 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #aaaaaa 1px solid; PADDING-TOP: 0.2em; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+TABLE.prettytable TD {
+	BORDER-RIGHT: #aaaaaa 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #aaaaaa 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #aaaaaa 1px solid; PADDING-TOP: 0.2em; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+TABLE.wikitable TH {
+	BACKGROUND: #f2f2f2; TEXT-ALIGN: center
+}
+TABLE.prettytable TH {
+	BACKGROUND: #f2f2f2; TEXT-ALIGN: center
+}
+TABLE.wikitable CAPTION {
+	
+}
+TABLE.prettytable CAPTION {
+	
+}
+.IPA {
+	FONT-FAMILY: Chrysanthi Unicode, Doulos SIL, Gentium, GentiumAlt, Code2000,
+                TITUS Cyberbit Basic, DejaVu Sans, Bitstream Vera Sans,
+                Bitstream Cyberbit, Arial Unicode MS, Lucida Sans Unicode,
+                Hiragino Kaku Gothic Pro, Matrix Unicode
+}
+.Unicode {
+	FONT-FAMILY: TITUS Cyberbit Basic, Code2000, Doulos SIL, Chrysanthi Unicode,
+                Bitstream Cyberbit, Bitstream CyberBase, Thryomanes,
+                Gentium, GentiumAlt, Visual Geez Unicode, Lucida Grande,
+                Arial Unicode MS, Microsoft Sans Serif, Lucida Sans Unicode
+}
+.polytonic {
+	FONT-FAMILY: Athena, Gentium, Palatino Linotype, Arial Unicode MS, Lucida Sans Unicode, Lucida Grande, Code2000
+}
+TABLE.col1der TD:unknown {
+	TEXT-ALIGN: right
+}
+TABLE.col1izq TD:unknown {
+	TEXT-ALIGN: left
+}
+TABLE.col1cen TD:unknown {
+	TEXT-ALIGN: center
+}
+UNKNOWN {
+	TEXT-ALIGN: right
+}
+UNKNOWN {
+	TEXT-ALIGN: left
+}
+UNKNOWN {
+	TEXT-ALIGN: center
+}
+UNKNOWN {
+	TEXT-ALIGN: right
+}
+UNKNOWN {
+	TEXT-ALIGN: left
+}
+UNKNOWN {
+	TEXT-ALIGN: center
+}
+UNKNOWN {
+	TEXT-ALIGN: right
+}
+UNKNOWN {
+	TEXT-ALIGN: left
+}
+UNKNOWN {
+	TEXT-ALIGN: center
+}
+UNKNOWN {
+	TEXT-ALIGN: right
+}
+UNKNOWN {
+	TEXT-ALIGN: left
+}
+UNKNOWN {
+	TEXT-ALIGN: center
+}
+.allpagesredirect {
+	FONT-STYLE: italic
+}
+.redirect-in-category {
+	FONT-STYLE: italic
+}
+#file IMG {
+	BACKGROUND: url(http://upload.wikimedia.org/wikipedia/commons/5/5d/Checker-16x16.png)
+}
+TABLE.user-availability {
+	BORDER-RIGHT: #333366 1px solid; BORDER-TOP: #333366 1px solid; BORDER-LEFT: #333366 1px solid; BORDER-BOTTOM: #333366 1px solid; TEXT-ALIGN: center
+}
+TABLE.user-availability TH {
+	FONT-SIZE: 110%
+}
+UNKNOWN {
+	BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px solid; BORDER-LEFT: #aaaaaa 1px solid; WIDTH: 30px; BORDER-BOTTOM: #aaaaaa 1px solid; HEIGHT: 10px; BACKGROUND-COLOR: #eeeeee
+}
+TABLE.user-availability .off {
+	BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px solid; FONT-SIZE: 80%; BORDER-LEFT: #aaaaaa 1px solid; BORDER-BOTTOM: #aaaaaa 1px solid; BACKGROUND-COLOR: #ffffff
+}
+TABLE.user-availability .onn {
+	BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px solid; FONT-SIZE: 80%; BORDER-LEFT: #aaaaaa 1px solid; BORDER-BOTTOM: #aaaaaa 1px solid; BACKGROUND-COLOR: #ccffcc
+}
+TABLE.user-availability .wrk {
+	BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px solid; FONT-SIZE: 80%; BORDER-LEFT: #aaaaaa 1px solid; BORDER-BOTTOM: #aaaaaa 1px solid; BACKGROUND-COLOR: #ccccff
+}
+TABLE.user-availability .cll {
+	BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px solid; FONT-SIZE: 80%; BORDER-LEFT: #aaaaaa 1px solid; BORDER-BOTTOM: #aaaaaa 1px solid; BACKGROUND-COLOR: #ffffdd
+}
+TABLE.user-availability .key {
+	BORDER-TOP: black 1px dashed; FONT-SIZE: 90%; TEXT-ALIGN: right
+}
+TABLE.user-availability .key SPAN {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+UNKNOWN {
+	PADDING-RIGHT: 16px; BACKGROUND: url(http://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Icons-mini-file_acrobat.gif/15px-Icons-mini-file_acrobat.gif) no-repeat right center
+}
+SPAN.PDFlink A {
+	PADDING-RIGHT: 17px! important; BACKGROUND: url(http://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Icons-mini-file_acrobat.gif/15px-Icons-mini-file_acrobat.gif) no-repeat right center
+}
+.para_biblios {
+	DISPLAY: none
+}
+.rotate_0 {
+	DISPLAY: block
+}
+.rotate_1 {
+	DISPLAY: none
+}
+.rotate_2 {
+	DISPLAY: none
+}
+.rotate_3 {
+	DISPLAY: none
+}
+.rotate_4 {
+	DISPLAY: none
+}
+.rotate_5 {
+	DISPLAY: none
+}
+.rotate_6 {
+	DISPLAY: none
+}
+.rotate_7 {
+	DISPLAY: none
+}
+.rotate_8 {
+	DISPLAY: none
+}
+.rotate_9 {
+	DISPLAY: none
+}
+.mw-specialpages-table {
+	TEXT-ALIGN: left
+}
+
+@media Screen, Handheld, Projection    
+{
+CITE .printonly {
+	DISPLAY: none
+}
+    }
+BODY.ns-14 DIV#mw-pages {
+	TEXT-ALIGN: left
+}
+BODY.page-Especial_Registro FIELDSET P SMALL {
+	FONT-SIZE: 100%
+}
+#bodyContent .plainlinks A {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px! important; PADDING-TOP: 0px! important
+}
+.plainlinksneverexpand {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px! important; PADDING-TOP: 0px! important
+}
+.plainlinksneverexpand .urlexpansion {
+	DISPLAY: none! important
+}
+.plainlinksneverexpand A {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px! important; PADDING-TOP: 0px! important
+}
+.plainlinksneverexpand A.text:unknown {
+	DISPLAY: none! important
+}
+.plainlinksneverexpand A.autonumber:unknown {
+	DISPLAY: none! important
+}
+.interProject {
+	CLEAR: both; BORDER-TOP: #aaaaaa 2px dotted; MARGIN-TOP: 2em; DISPLAY: none
+}
+SUP {
+	LINE-HEIGHT: 1em
+}
+SUB {
+	LINE-HEIGHT: 1em
+}
